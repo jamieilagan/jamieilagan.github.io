@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jamieilagan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .glass-navbar {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(30px) saturate(180%);
+        }
+
+        .glass-contact {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(30px) saturate(180%);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(30px) saturate(180%);
+        }
+
+        .nav-link.active {
+            color: #198754;
+            border-bottom: 3px solid #198754;
+            font-weight: 600;
+        }
+
+        .nav-link {
+            border: none;
+            background: transparent;
+            color: #222;
+            font-size: 1.15rem;
+            font-weight: 500;
+            border-radius: 0;
+            padding: 0.5rem 1.5rem;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: #198754;
+            text-decoration: none;
+        }
+
+        .icon {
+            width: 35px;
+            height: 35px;
+        }
+
+        .container .profile-card {
+            border-radius: 16px;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .profile-card img {
+            width: 319px;
+            height: 368px;
+        }
+
+        .icon-location {
+            width: 45px;
+            height: 45px;
+        }
+
+        .profile-info h2 {
+            letter-spacing: 0.25rem;
+            font-weight: 500;
+            font-size: xx-large;
+        }
+
+        .subtitle {
+            letter-spacing: 0.45rem;
+            font-size: 1rem;
+            color: #444;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .profile-info .name {
+            color: #198754;
+            font-weight: 500;
+        }
+
+        .profile-info .desc {
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-info .school,
+        .program {
+            font-weight: bold;
+        }
+
+        .quote {
+            font-size: larger;
+            color: #000;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-shadow: rgba(231, 233, 234, 0.8) 1px 1px 2px;
+        }
+
+        .highlight {
+            font-style: italic;
+            color: #198754;
+            font-weight: 500;
+        }
+
+        .contact-value {
+            min-width: 220px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body style="background: linear-gradient(to top, #4b6a5c 10%, #9eb5ab 30%, #f3f4f3 100%);">
+    <!-- Navigation Bar -->
+    <div class="container shadow p-2 my-4 rounded position-sticky top-0 z-1 glass-navbar">
+        <div class="row align-items-center flex-nowrap">
+            <div class="col-2 d-flex justify-content-start align-items-center">
+                <img class="icon" src="assets/j.png" alt="Logo">
+            </div>
+            <div class="col-8 d-flex justify-content-center align-items-center gap-2">
+                <a class="nav-link active" href="#profile-card">About</a>
+                <a class="nav-link" href="#">CV</a>
+                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+            <div class="col-2 d-flex justify-content-end align-items-center gap-3">
+                <a href="https://www.linkedin.com/in/jan-maridel-ilagan-414582324/" target="_blank">
+                    <img class="icon" src="assets/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/jamieilagan" target="_blank">
+                    <img class="icon" src="assets/github.png" alt="GitHub">
+                </a>
+                <a href="mailto:ilaganjanmaridel@gmail.com">
+                    <img class="icon" src="assets/gmail.png" alt="Gmail">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="container shadow py-2 my-4 rounded glass">
+        <div class="profile-card flex-column flex-md-row justify-content-center align-items-center" id="profile-card">
+            <img src="assets/formal.png" alt="">
+            <div class="profile-info text-center">
+                <h2>
+                    I am <span class="name">Jan Maridel Ilagan</span>
+                    <div class="subtitle">UX/UI Designer & Programmer</div>
+                </h2>
+                <div class="desc">
+                    A third year student at<br>
+                    <span class="school">Polytechnic University of the Philippines<br>Sto. Tomas Campus</span><br>
+                    taking the program<br>
+                    <span class="program">Bachelor of Science in Information Technology</span>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-3 justify-content-center align-items-center">
+            <div class="col-auto d-flex align-items-center justify-content-center gap-2">
+                <img class="icon-location" src="assets/location.png" alt="Location">
+                <span class="subtitle text-center mt-2">Talisay, Batangas</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quote -->
+    <div class="container text-center">
+        <div class="quote">
+            “Through learning from people, <span class="highlight">I grow</span> — and through that, <span
+                class="highlight">I design</span>.”
+        </div>
+    </div>
+
+
+    <!-- About Me -->
+    <div class="container shadow py-4 my-4 rounded text-center glass">
+        <div class="row">
+            <div class="col">
+                <div class="h4">About Me</div>
+                <p>I also go by the name <span class="highlight">Jamie</span>.<br>
+                    <br>I am a UI/UX Designer and Programmer who loves transforming concepts
+                    into digital experiences
+                    <br>that connect with people. I believe good design goes beyond visuals —<br>
+                    <span class="highlight"> it’s about empathy, usability, and purpose.</span><br>
+
+                    <br>As a third-year Information Technology student at PUP Sto. Tomas Campus, I’m continuously
+                    <br>developing my skills in front-end design, user experience research, and interactive
+                    prototyping.
+                    <br>My goal is to craft designs that make technology simple, accessible, and enjoyable for
+                    everyone.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- What I Do -->
+    <div class="container shadow py-4 my-4 rounded text-center glass">
+        <div class="row">
+            <div class="col">
+                <div class="h4">What I Do</div>
+            </div>
+        </div>
+        <div class="row my-3 justify-content-center">
+            <div class="col-5 mx-3">
+                <div class="container bg-success py-3 rounded text-light">
+                    UI/UX Design
+                </div>
+            </div>
+            <div class="col-5 mx-3">
+                <div class="container bg-success py-3 rounded text-light">
+                    Web Development
+                </div>
+            </div>
+        </div>
+        <div class="row my-3 justify-content-center">
+            <div class="col-5 mx-3">
+                <div class="container bg-success py-3 rounded text-light"> Wireframing</div>
+            </div>
+            <div class="col-5 mx-3">
+                <div class="container bg-success py-3 rounded text-light"> Prototyping</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Me -->
+    <div class="container shadow py-4 my-4 rounded glass-contact" id="contact">
+        <div class="row text-center">
+            <div class="col">
+                <div class="h4">Contact Me</div>
+                <p>I'm always open to collaborations, projects, or just a
+                    good conversation about design and development.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center my-2">
+            <div class="col-6 col-md-2 py-2 text-md-end text-center">
+                Email:
+            </div>
+            <div class="col-6 col-md-4 d-flex justify-content-center">
+                <div class="container shadow bg-light py-2 rounded text-center contact-value mx-auto">
+                    ilaganjanmaridel@gmail.com
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center my-2">
+            <div class="col-6 col-md-2 py-2 text-md-end text-center">
+                LinkedIn:
+            </div>
+            <div class="col-6 col-md-4 d-flex justify-content-center">
+                <div class="container shadow bg-light py-2 rounded text-center contact-value mx-auto">
+                    Jan Maridel Ilagan
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center my-2">
+            <div class="col-6 col-md-2 py-2 text-md-end text-center">
+                GitHub:
+            </div>
+            <div class="col-6 col-md-4 d-flex align-items-center">
+                <div class="container shadow bg-light py-2 rounded text-center contact-value mx-auto">
+                    jamieilagan
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
