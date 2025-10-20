@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jamieilagan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .glass-navbar {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(30px) saturate(180%);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(30px) saturate(180%);
+        }
+
+        .nav-link.active {
+            color: #198754;
+            border-bottom: 3px solid #198754;
+            font-weight: 600;
+        }
+
+        .nav-link {
+            border: none;
+            background: transparent;
+            color: #222;
+            font-size: 1.15rem;
+            font-weight: 500;
+            border-radius: 0;
+            padding: 0.5rem 1.5rem;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: #198754;
+            text-decoration: none;
+        }
+
+        .icon {
+            width: 35px;
+            height: 35px;
+        }
+
+        .icon-skills {
+            width: 70px;
+            height: 70px;
+            gap: 5px;
+        }
+
+        .container .profile-card {
+            border-radius: 16px;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .profile-card img {
+            width: 319px;
+            height: 368px;
+        }
+
+        .profile-info .icon-location {
+            width: 45px;
+            height: 45px;
+        }
+
+        .profile-info h2 {
+            letter-spacing: 0.25rem;
+            font-weight: 500;
+            font-size: xx-large;
+        }
+
+        .subtitle {
+            letter-spacing: 0.45rem;
+            font-size: 1rem;
+            color: #444;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .profile-info .name {
+            color: #198754;
+            font-weight: 500;
+        }
+
+        .profile-info .desc {
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-info .school,
+        .program {
+            font-weight: bold;
+        }
+
+        .highlight {
+            font-style: italic;
+            color: #198754;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body style="background: linear-gradient(to top, #4b6a5c 10%, #9eb5ab 30%, #f3f4f3 100%);">
+    <!-- Navigation Bar -->
+    <div class="container shadow p-2 my-4 rounded position-sticky top-0 z-1 glass-navbar">
+        <div class="row align-items-center flex-nowrap">
+            <div class="col d-flex justify-content-center align-items-center gap-2">
+                <a class="nav-link" href="index.html">About</a>
+                <a class="nav-link active" href="cv.html">CV</a>
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-link" href="index.html#contact">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="container shadow py-2 my-4 rounded glass">
+        <div class="profile-card flex-column flex-md-row justify-content-center align-items-center" id="profile-card">
+            <img src="assets/formal.png" alt="">
+            <div class="profile-info text-center">
+                <h2>
+                    I am <span class="name">Jan Maridel Ilagan</span>
+                </h2>
+                <div class="desc">
+                    <img class="icon-location" src="assets/gmail.png" alt="Gmail">
+                    <span>ilaganjanmaridel@gmail.com</span> <br>
+                    <img class="icon-location" src="assets/location.png" alt="Location">
+                    <span>Talisay, Batangas</span> <br>
+                    <a href="cv.pdf" class="btn btn-outline-success btn-sm mt-2 py-2 px-5">View CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container shadow py-2 my-4 rounded glass">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <h2 class="text-center">Curriculum Vitae</h2>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-12 ps-5">
+                <p class="text-justify">A passionate UI/UX Designer and Programmer, currently a third-year BSIT
+                    student
+                    at PUP Sto. Tomas Campus. Skilled in front-end development, user experience design, and interactive
+                    prototyping, with a strong interest in creating intuitive and human-centered digital solutions.
+                    Actively developing teamwork and communication skills through collaborative projects, aiming to
+                    design systems that make technology more accessible and meaningful for people.</p>
+            </div>
+        </div>
+
+        <!-- education -->
+        <div class="container ps-5">
+            <div class="row mb-3">
+                <div class="col-4 col-md-3">
+                    <h4 class="text-start">Education</h4>
+                </div>
+                <div class="col-8 col-md-9 d-flex align-items-left flex-column">
+                    <div class="h5 fw-bold">Bachelor of Science in Information Technology</div>
+                    <div class="subtitle">
+                        Polytechnic University of the Philippines Sto. Tomas
+                        <span class="year"><br>2023-Present</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="row mb-3">
+                <div class="col-4 col-md-3">
+                    <h4 class="text-start">Experience</h4>
+                </div>
+                <div class="col-8 col-md-9 d-flex align-items-left flex-column">
+                    <div class="h5 fw-bold">Internship - Human Resources</div>
+                    <div class="subtitle">
+                        Yazaki Torres Manufacturing Inc.
+                        <span class="year"><br>February-March 2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="row mb-3">
+                <div class="col-4 col-md-3">
+                    <h4 class="text-start">Soft Skills</h4>
+                </div>
+                <div class="col-8 col-md-9 d-flex align-items-left flex-column">
+                    <div class="h5 fw-bold mb-0">Communication
+                        <br>Teamwork
+                        <br>Problem Solving
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="row mb-3">
+                <div class="col-4 col-md-3">
+                    <h4 class="text-start">Technical Skills</h4>
+                </div>
+                <div class="col-8 col-md-9">
+                    <img class="icon-skills" src="assets/figma.png" alt="Skills">
+                    <img class="icon-skills" src="assets/premiere.png" alt="Skills">
+                    <img class="icon-skills" src="assets/photoshop.png" alt="Skills">
+                </div>
+            </div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
