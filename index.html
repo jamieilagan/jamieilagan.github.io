@@ -7,147 +7,8 @@
     <title>jamieilagan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <style>
-        .glass-navbar {
-            background: rgba(255, 255, 255, 0.4);
-            backdrop-filter: blur(30px) saturate(180%);
-        }
+    <link rel="stylesheet" href="assets/style.css">
 
-        .glass-contact {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(30px) saturate(180%);
-        }
-
-        .glass {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(30px) saturate(180%);
-        }
-
-        .nav-link.active {
-            color: #198754;
-            border-bottom: 3px solid #198754;
-            font-weight: 600;
-        }
-
-        .nav-link {
-            border: none;
-            background: transparent;
-            color: #222;
-            font-size: 1.15rem;
-            font-weight: 500;
-            border-radius: 0;
-            padding: 0.5rem 1.5rem;
-            transition: color 0.2s;
-        }
-
-        .nav-link:hover {
-            color: #198754;
-            text-decoration: none;
-        }
-
-        .icon {
-            width: 35px;
-            height: 35px;
-        }
-
-        .container .profile-card {
-            border-radius: 16px;
-            padding-top: 2rem;
-            padding-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        .profile-card img {
-            width: 319px;
-            height: 368px;
-        }
-
-        .icon-location {
-            width: 45px;
-            height: 45px;
-        }
-
-        .profile-info h2 {
-            letter-spacing: 0.25rem;
-            font-weight: 500;
-            font-size: xx-large;
-        }
-
-        .subtitle {
-            letter-spacing: 0.45rem;
-            font-size: 1rem;
-            color: #444;
-            font-style: italic;
-            margin-bottom: 1rem;
-        }
-
-        .profile-info .name {
-            color: #198754;
-            font-weight: 500;
-        }
-
-        .profile-info .desc {
-            font-size: 1.1rem;
-            margin-top: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .profile-info .school,
-        .program {
-            font-weight: bold;
-        }
-
-        .quote {
-            font-size: larger;
-            color: #000;
-            text-align: center;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            text-shadow: rgba(231, 233, 234, 0.8) 1px 1px 2px;
-        }
-
-        .highlight {
-            font-style: italic;
-            color: #198754;
-            font-weight: 500;
-        }
-
-        .contact-value {
-            min-width: 220px;
-            max-width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* make list items blend with the glass-contact background */
-        .glass-contact .list-group {
-            background: transparent;
-        }
-
-        .glass-contact .list-group-item {
-            background: transparent;
-            border: none;
-            /* remove the default white box look */
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
-        }
-
-        /* add subtle dividers and hover state for clarity */
-        .glass-contact .list-group-item+.list-group-item {
-            border-top: 1px solid rgba(0, 0, 0, 0.06);
-        }
-
-        .glass-contact .list-group-item:hover {
-            background: rgba(0, 0, 0, 0.03);
-        }
-
-        /* ensure icons remain visible on the lighter glass */
-        .glass-contact .icon {
-            filter: none;
-        }
-    </style>
 </head>
 
 <body style="background: linear-gradient(to top, #4b6a5c 10%, #9eb5ab 30%, #f3f4f3 100%);">
@@ -164,9 +25,9 @@
     </div>
 
     <!-- Profile Card -->
-    <div class="container shadow py-2 my-4 rounded glass">
+    <div class="container shadow py-2 my-4 rounded glass content-section">
         <div class="profile-card flex-column flex-md-row justify-content-center align-items-center" id="profile-card">
-            <img src="assets/formal.png" alt="">
+            <img src="assets/images/picture.png" alt="">
             <div class="profile-info text-center">
                 <h2>
                     I am <span class="name">Jan Maridel Ilagan</span>
@@ -182,14 +43,14 @@
         </div>
         <div class="row pb-2 justify-content-center align-items-center">
             <div class="col-8 justify-content-center d-flex align-items-center gap-2">
-                <img class="icon-location" src="assets/location.png" alt="Location">
+                <img class="icon-location" src="assets/images/location.png" alt="Location">
                 <span class="subtitle text-center mt-2">Talisay, Batangas</span>
             </div>
         </div>
     </div>
 
     <!-- Quote -->
-    <div class="container text-center">
+    <div class="container text-center content-section">
         <div class="quote">
             “Through learning from people, <span class="highlight">I grow</span> — and through that, <span
                 class="highlight">I design</span>.”
@@ -198,7 +59,7 @@
 
 
     <!-- About Me -->
-    <div class="container shadow py-4 my-4 rounded text-center glass">
+    <div class="container shadow py-4 my-4 rounded text-center glass content-section">
         <div class="row border-bottom pb-2">
             <div class="col justify-content-center align-items-center">
                 <div class="h4">About <span class="highlight">Me</span></div>
@@ -222,7 +83,7 @@
     </div>
 
     <!-- What I Do -->
-    <div class="container shadow py-4 my-4 rounded text-center glass">
+    <div class="container shadow py-4 my-4 rounded text-center glass content-section">
         <div class="row border-bottom pb-2">
             <div class="col">
                 <div class="h4">What <span class="highlight">I</span> Do</div>
@@ -251,7 +112,7 @@
     </div>
 
     <!-- Contact Me -->
-    <div class="container shadow py-4 my-4 rounded glass-contact" id="contact">
+    <div class="container shadow py-4 my-4 rounded glass-contact content-section" id="contact">
         <div class="row text-center mb-2">
             <div class="col">
                 <h4><span class="highlight">Contact</span> Me</h4>
@@ -264,7 +125,7 @@
             <div class="col-12 col-md-8 col-lg-6">
                 <ul class="list-group">
                     <li class="list-group-item d-flex align-items-center gap-3">
-                        <img src="assets/gmail.png" alt="Email" class="icon">
+                        <img src="assets/images/gmail.png" alt="Email" class="icon">
                         <div class="flex-grow-1">
                             <div class="fw-bold">Email</div>
                             <a href="mailto:ilaganjanmaridel@gmail.com"
@@ -275,7 +136,7 @@
                     </li>
 
                     <li class="list-group-item d-flex align-items-center gap-3">
-                        <img src="assets/linkedin.png" alt="LinkedIn" class="icon">
+                        <img src="assets/images/linkedin.png" alt="LinkedIn" class="icon">
                         <div class="flex-grow-1">
                             <div class="fw-bold">LinkedIn</div>
                             <a href="https://www.linkedin.com/in/jan-maridel-ilagan-414582324/" target="_blank"
@@ -287,7 +148,7 @@
                     </li>
 
                     <li class="list-group-item d-flex align-items-center gap-3">
-                        <img src="assets/github.png" alt="GitHub" class="icon">
+                        <img src="assets/images/github.png" alt="GitHub" class="icon">
                         <div class="flex-grow-1">
                             <div class="fw-bold">GitHub</div>
                             <a href="https://github.com/jamieilagan" target="_blank" rel="noopener"
@@ -304,6 +165,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    console.log(entry.target)
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            });
+        }, {});
+        const hiddenElements = document.querySelectorAll('.content-section');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
 </body>
 
 </html>
