@@ -55,7 +55,7 @@
                 <div class="h4">My Works</div>
             </div>
         </div>
-        <div class="row d-flex justify-content-center align-items-center gap-4" id="contents">
+        <div class="row row-cols-2 row-cols-md-3 g-4" id="contents">
         </div>
     </div>
 
@@ -70,8 +70,8 @@
 
         for (var i = 0; i < projects.length; i++) {
             contents.innerHTML += `
-            <div class="col-8 col-md-4">
-                <div class="card shadow">
+            <div class="col">
+                <div class="card shadow h-100">
                     <img src="`+projects[i].image+`" class="card-img-top" alt="Experience Mayon Volcano">
                     <div class="card-body">
                         <h5 class="card-title text-success">`+projects[i].Activity+`</h5>
