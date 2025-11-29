@@ -7,16 +7,16 @@
     <title>jamieilagan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Jersey+25' rel='stylesheet'>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body style="background: linear-gradient(to top, #4b6a5c 10%, #97b6a8 30%, #d5e5d5 100%);">
     <!-- Navigation Bar -->
-    <div class="container shadow p-2 my-4 rounded position-sticky top-0 z-1 glass-navbar">
+    <div class="container shadow p-2 my-4 rounded position-sticky top-0 z-1 glass-navbar" style="font-family: 'Jersey 25', sans-serif;">
         <div class="row align-items-center flex-nowrap">
             <div class="col d-flex justify-content-center align-items-center gap-2">
                 <a class="nav-link" href="index.html">About</a>
-                <a class="nav-link" href="cv.html">CV</a>
                 <a class="nav-link active" href="#profile-card">Projects</a>
                 <a class="nav-link" href="index.html#contact">Contact</a>
             </div>
@@ -24,11 +24,11 @@
     </div>
 
     <!-- Profile Card -->
-    <div class="container shadow py-2 my-4 rounded glass">
+    <div class="container shadow p-4 my-4 rounded glass">
         <div class="profile-card flex-column flex-md-row justify-content-center align-items-center" id="profile-card">
             <img src="assets/images/picture.png" alt="picture">
             <div class="profile-info text-center">
-                <h2>
+                <h2 style="font-family: 'Jersey 25', sans-serif;">
                     I am <span class="name">Jan Maridel Ilagan</span>
                     <div class="subtitle">UX/UI Designer & Programmer</div>
                 </h2>
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="row pb-2 justify-content-center align-items-center">
+        <div class="row pb-3 justify-content-center align-items-center" style="font-family: 'Jersey 25', sans-serif;">
             <div class="col-8 justify-content-center d-flex align-items-center gap-2">
                 <img class="icon-location" src="assets/images/location.png" alt="Location">
                 <span class="subtitle text-center mt-2">Talisay, Batangas</span>
@@ -51,7 +51,7 @@
     <!-- Works -->
     <div class="container shadow py-4 my-4 rounded text-center glass">
         <div class="row">
-            <div class="col border-bottom pb-3 mb-4">
+            <div class="col border-bottom pb-3 mb-4" style="font-family: 'Jersey 25', sans-serif;">
                 <div class="h4">My Works</div>
             </div>
         </div>
@@ -74,10 +74,10 @@
                 <div class="card shadow h-100">
                     <img src="`+projects[i].image+`" class="card-img-top" alt="Experience Mayon Volcano">
                     <div class="card-body">
-                        <h5 class="card-title text-success">`+projects[i].Activity+`</h5>
+                        <h5 class="card-title text-success" style="font-family: 'Jersey 25', sans-serif;">`+projects[i].Activity+`</h5>
                         <p class="card-text">`+projects[i].description+`</p>
                         <a href="`+projects[i].link+`"
-                            class="btn btn-outline-success btn-sm px-3 mt-2" target="_blank">Explore Page</a>
+                            class="btn btn-outline-success btn-sm px-3 mt-2" style="font-family: 'Jersey 25', sans-serif;" target="_blank">Explore Page</a>
                     </div>
                 </div>
             </div>
