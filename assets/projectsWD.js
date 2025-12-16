@@ -21,6 +21,6 @@ var projects = [
         image: "assets/images/activity7.jpg",
         Activity: "Activity #7",
         description: "A <strong>Rick and Morty</strong> character browser powered by the Rick and Morty API.",
-        link: "https://jamieilagan.github.io/third-project/"
+        link: "https://jamieilagan.github.io/fourth-project/"
     }
 ];
