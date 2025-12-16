@@ -165,3 +165,7 @@
      width: 45px;
      height: 45px;
  }
+
+ .card:hover {
+     transform: translateY(-5px);
+ }
