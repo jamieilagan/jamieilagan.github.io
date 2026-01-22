@@ -17,8 +17,8 @@
         <div class="row align-items-center flex-nowrap">
             <div class="col d-flex justify-content-center align-items-center gap-2">
                 <a class="nav-link" href="index.html">About</a>
-                <a class="nav-link active" href="#profile-card">Projects</a>
-                <a class="nav-link" href="index.html#contact">Contact</a>
+                <img src="assets/images/logo.svg" alt="Website Logo" width="100" height="55">
+                <a class="nav-link active" href="projects.html">Projects</a>
             </div>
         </div>
     </div>
@@ -30,7 +30,7 @@
             <div class="profile-info text-center">
                 <h2 style="font-family: 'Jersey 25', sans-serif;">
                     I am <span class="name">Jan Maridel Ilagan</span>
-                    <div class="subtitle">UX/UI Designer & Programmer</div>
+                    <div class="subtitle">UI/UX Designer & Programmer</div>
                 </h2>
                 <div class="desc">
                     A third year student at<br>
@@ -55,7 +55,7 @@
                 <div class="h4">My Works</div>
             </div>
         </div>
-        <div class="row row-cols-2 row-cols-md-3 g-4" id="contents">
+        <div class="row row-cols-2 row-cols-md-3 g-4 p-4" id="contents">
         </div>
     </div>
 
@@ -70,7 +70,7 @@
 
         for (var i = 0; i < projects.length; i++) {
             contents.innerHTML += `
-            <div class="col">
+            <div class="col p-4">
                 <div class="card shadow h-100">
                     <img src="`+projects[i].image+`" class="card-img-top" alt="`+projects[i].Activity+`">
                     <div class="card-body">
