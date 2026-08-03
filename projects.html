@@ -53,6 +53,22 @@
         <div class="row">
             <div class="col border-bottom pb-3 mb-4" style="font-family: 'Jersey 25', sans-serif;">
                 <div class="h4">My Works</div>
+                <nav aria-label="breadcrumb" class="mt-3">
+                    <ol class="breadcrumb justify-content-center mb-0">
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <button class="category-toggle active" data-category="all">All Works</button>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <button class="category-toggle" data-category="current">Website Works</button>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <button class="category-toggle" data-category="developed">Developed Applications</button>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <button class="category-toggle" data-category="multimedia">Multimedia Works</button>
+                        </li>
+                    </ol>
+                </nav>
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 g-4 p-4 mx-5" id="contents">
@@ -67,22 +83,55 @@
 
     <script>
         var contents = document.getElementById("contents");
+        var categoryButtons = document.querySelectorAll(".category-toggle");
 
-        for (var i = 0; i < projects.length; i++) {
-            contents.innerHTML += `
-            <div class="col p-4">
-                <div class="card shadow mx-2 h-100">
-                    <img src="`+projects[i].image+`" class="card-img-top" alt="`+projects[i].Activity+`">
-                    <div class="card-body">
-                        <h5 class="card-title text-success" style="font-family: 'Jersey 25', sans-serif;">`+projects[i].Activity+`</h5>
-                        <p class="card-text">`+projects[i].description+`</p>
-                        <a href="`+projects[i].link+`"
-                            class="btn btn-outline-success btn-sm px-3 mt-2" style="font-family: 'Jersey 25', sans-serif;" target="_blank">Explore Page</a>
+        function renderProjects(category) {
+            var filteredProjects = projects.filter(function (project) {
+                return category === "all" || project.category === category;
+            });
+
+            if (filteredProjects.length === 0) {
+                contents.innerHTML = `
+                    <div class="col-12">
+                        <div class="alert alert-light text-success" role="status">
+                            No works in this section yet.
+                        </div>
                     </div>
-                </div>
-            </div>
-            `;
+                `;
+                return;
+            }
+
+            contents.innerHTML = filteredProjects.map(function (project) {
+                return `
+                    <div class="col p-4">
+                        <div class="card shadow mx-2 h-100">
+                            <img src="` + project.image + `" class="card-img-top" alt="` + project.Activity + `">
+                            <div class="card-body">
+                                <h5 class="card-title text-success" style="font-family: 'Jersey 25', sans-serif;">` + project.Activity + `</h5>
+                                <p class="card-text">` + project.description + `</p>
+                                <a href="` + project.link + `"
+                                    class="btn btn-outline-success btn-sm px-3 mt-2" style="font-family: 'Jersey 25', sans-serif;" target="_blank" rel="noopener noreferrer">Explore Page</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join("");
         }
+
+        categoryButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                categoryButtons.forEach(function (item) {
+                    item.classList.remove("active");
+                    item.closest(".breadcrumb-item").classList.remove("active");
+                });
+
+                button.classList.add("active");
+                button.closest(".breadcrumb-item").classList.add("active");
+                renderProjects(button.getAttribute("data-category"));
+            });
+        });
+
+        renderProjects("all");
     </script>
 </body>
 
