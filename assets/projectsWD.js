@@ -31,12 +31,20 @@ var projects = [
         category: "current",
         categoryLabel: "Current Works"
     },
-        {
+    {
         image: "assets/images/multimedia.jpg",
         Activity: "Multimedia Works Collection",
         description: "A <strong>Multimedia Works Showcase</strong> that highlights various multimedia projects.",
         link: "https://jamieilagan.github.io/multimedia-works/",
         category: "multimedia",
         categoryLabel: "Multimedia Works"
+    },
+    {
+        image: "assets/images/wastewise.jpg",
+        Activity: "WasteWise App",
+        description: "A <strong>WasteWise App</strong> for AI-powered waste classification and disposal assistance.",
+        link: "https://jamieilagan.github.io/WasteWiseApp/",
+        category: "developed",
+        categoryLabel: "Developed Applications"
     }
 ];
